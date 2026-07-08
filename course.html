@@ -1,7 +1,259 @@
 <style>
-  .tweet {
+  main {
+    display: flex;
+  }
+  div {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav {
+    background-color: #e5f2e1;
+  }
+
+  .main {
+    background-color: rgb(31, 119, 191);
+  }
+
+  .topics {
+    background-color: yellow;
   }
 </style>
 
-<div class="tweet">This is a div</div>
-<span>This is a span with class "tweet"</span>
+<script>
+  // modulus operator: this returns the remainder of a division operation.
+
+  // This % symbol is called the modulus operator.
+
+  var remainder = 13 % 2;
+
+  // console.log(remainder);
+
+  // exponentiation
+
+  let power_to_two = 3 ** 2; // this is 3 raise to power 2
+
+  // console.log(power_to_two);
+
+  // assignment operators
+
+  var variable;
+  variable = 90;
+
+  // +=
+  // = LHS + RHS
+
+  variable += 88;
+
+  // console.log(variable);
+
+  // -= assignment operator
+
+  variable -= 88;
+
+  // console.log(variable);
+
+  // *= assignment operator
+
+  variable *= 88;
+
+  // console.log(variable);
+
+  // /= assignment operator
+
+  variable /= 88;
+
+  // console.log(variable);
+
+  // Comparison operators
+  // == non-strict equality operator
+
+  var result = "5" == 5; // true
+
+  // console.log(result);
+
+  // === strict equality operator
+
+  var res = "5" === 5; // false
+  // console.log(res)
+
+  // Comparison operators
+
+  // Greater than
+
+  10 > 6; // true
+  6 > 10; // false
+
+  // console.log(6 > 10);
+  // console.log(10 > 6);
+
+  // Less than
+  const less = 10 < 6;
+  // console.log(less);
+
+  const less1 = 6 < 10;
+  // console.log(less1);
+
+  // Not equal to
+  // !=
+
+  const n_equal = 9 != 8;
+  // console.log(n_equal)
+
+  // !==
+
+  const nn_eq = 9 !== 9;
+  // console.log(nn_eq);
+
+  // Logical OR
+  // || - double pipe
+
+  // Boolean table
+  // Number: numbers less than or equal to 0 are false.
+  // numbers greater than 0 are true.
+  // String: an empty string is a false boolean
+  // non-empty strings are true boolean.
+  // null and undefined are false booleans.
+  // Arrays and Objects are true booleans.
+
+  const e = " " || null;
+  // In logical OR, If the left hand side evals to false it returns the right-hand side.
+  // if the left-hand side evals to true, it returns the value of the left-hand side.
+
+  // console.log(e);
+
+  // OR Truth Table in Electronics
+  // [1] [0] = [1]
+  // [0] [1] = [1]
+  // [0] [0] = [0]
+  // [1] [1] = [1]
+
+  // Logical AND
+  // & - ampersand
+  // && : double ampersand
+  // &&: It returns the right-hand side if the left-hand side and right-hand side evals to true.
+  // if the LHS evals to false and the RHS evals to true, then it returns the LHS.
+  // if either of the LHS or RHS evals to false, then the LHS is returned.
+  const and = 88 && false;
+
+  // console.log(and)
+
+  // 000000 & 111111 = 000000
+
+  // Increment and Decrement operators
+  // ++: increment - means increase by one
+
+  let index = 4;
+  // console.log(index++);
+  // console.log(++index);
+
+  // index++: returns the previous value of the index after the increment.
+
+  // --
+  // decreases a value by one
+  // console.log(--index);
+
+  // Ternary operator ?
+  // let isLogged = (98 == 8) ? "Logged In" : "Not Logged In";
+  // conditional statement/expression ? true statement : fallback statement
+  // the true statement will be evaluated if the conditional statement evals to true
+  // the fallback statement will be executed if the conditional statement evaluates to false
+
+  // Nullish coalescing operator ??
+
+  // info for wilfred
+  // let wilfred_age = 90;
+  // let wilfred_height = 900;
+  // let wilfred_complexion = "fair"
+  // let wilfred_eye = "black";
+
+  // wilfred_age;
+
+  let wilfred = {
+    age: 90,
+    height: 900,
+    complexion: "fair",
+    eye: "black",
+  };
+
+  // console.log(wilfred.eye);
+
+  // In JavaScript, we can create an object from a class using the new keyword.
+  // or we can create it using the {} braces.
+  // a property in an object is used to create a key-value pair.
+
+  // let isLogged = users ?? "Nnamdi";
+  // ??: it returns the LHS if the LHS evals to true
+  // it returns RHS, if the LHS evals to false.
+
+  // console.log(isLogged);
+
+  // Optional chaining operator ?.
+  // console.log(wilfred?.hairStyle);
+
+  // Control flow statements
+  // if
+
+  // if(false) {
+  //   console.log("Hello, I am inside the if statement.");
+  // }
+
+  // if-else
+
+  // if(true) {
+  //   console.log("Hello, I am inside the if statement.");
+  // } else {
+  //   console.log("Inside the else statement.");
+  // }
+
+  // if-elseif-else
+  // if (true) {
+  //   console.log("Hello, I am inside the if statement.");
+  // } else if (false) {
+  //   console.log("Inside else-if statement.");
+  // } else if (false) {
+  //   console.log("Inside else-if statement.");
+  // } else if (false) {
+  //   console.log("Inside else-if statement.");
+  // } else {
+  // }
+
+  // let variable = 0;
+  let array = ["pepper", "tomatoes", "onions", 90, true, [], {}];
+  // how do we access the elements in the array?
+  // we access elements in an array by using index.
+  // what is index? index is the position of the elements in the array.
+  // we count positions from 0
+  // array[0]; // pepper
+  // array[1]; // tomatoes
+
+  // for loop: traditional for...loop
+  for(let index = 0; index <= 6; index = index + 1) {
+    console.log(array[index])
+  }
+
+  // for..of
+  // for...in
+  // switch
+  // while
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+  <main>
+    <div class="nav"></div>
+
+    <div class="main"></div>
+
+    <div class="topics"></div>
+  </main>
+</body>
