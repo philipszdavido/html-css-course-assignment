@@ -169,13 +169,6 @@
 
   // wilfred_age;
 
-  let wilfred = {
-    age: 90,
-    height: 900,
-    complexion: "fair",
-    eye: "black",
-  };
-
   // console.log(wilfred.eye);
 
   // In JavaScript, we can create an object from a class using the new keyword.
@@ -226,20 +219,141 @@
   // we count positions from 0
   // array[0]; // pepper
   // array[1]; // tomatoes
+  // array.0;
+
+  // index-based approach
+  let js_object = {
+    0: "pepper",
+    1: "tomatoes",
+    2: "onions",
+    3: 90,
+    4: true,
+    5: [],
+    6: {},
+  };
+
+  // js_object[0]; // cannot use a dot access for an index-based approach
 
   // for loop: traditional for...loop
-  for (let index = 0; index <= 6; index = index + 1) {
-    console.log(array[index]);
-  }
+  // for (let index = 0; index <= 6; index = index + 1) {
+  //   console.log(array[index]);
+  // }
 
-  // for..of
-  // for...in
+  // infinite loop: a loop that never ends
+
+  // for..of: it is a simpler way to iterate through an array
+  // for (let element of array) {
+  //   console.log(element);
+  // }
+
+  // property_name colon property_value comma
+
+  // wilfred.eye; // black
+  // wilfred["eye"]; // black
+
+  // element-named approach
+
+  // for...in: it is used to iterate over objects.
+
+  // for(let property in array) {
+  //   console.log(property, array[property]); // named property access
+  // }
+
   // switch
+
+  let num = 3;
+
+  // switch(num) {
+  //   case 0: {
+  //     console.log("pepper");
+  //     break;
+  //   }
+  //   case 1: {
+  //     console.log("tomatoes");
+  //     break;
+  //   }
+  //   default: {
+  //     console.log(num, "No case condition met.");
+  //     break;
+  //   }
+  // }
+
   // while
 
-  // class
+  // while(num > 0) {
+  //   console.log("This is while", num);
+  //   num--;
+  // }
+
+  // while(true) {}
+
+  // Class
+
+  // class is a blueprint used to create an object
+  // let wilfred = {
+  //   age: 90,
+  //   height: 900,
+  //   complexion: "fair",
+  //   eye: "black",
+  // };
+
+  // wilfred.age;
+
+  // function name(name, age) {
+  //   console.log(name, age);
+  // }
+
+  // class Student {
+  //   constructor(age, height, complexion, eye) {
+  //     this.age = age;
+  //     this.height = height;
+  //     this.complexion = complexion;
+  //     this.eye = eye;
+  //   }
+  // }
+
+  // let student_obj = new Student(50, 900, "dark", "blue");
+  // let student_2 = new Student(25, 7, "brown", "black");
+
+  // console.log(student_obj.age);
+  // console.log(student_2.age);
+  // console.log(student_2.complexion);
+
+  // console.log(student_obj);
+
+  // class Bread {
+  //   constructor(flour, egg, butter) {
+  //     this.flour = flour;
+  //     this.egg = egg;
+  //     this.butter = butter;
+  //   }
+
+  //   bake() {
+  //     console.log("Baking bread using :", this.flour, this.egg, this.butter);
+  //   }
+  // }
+
+  // const chisomBread = new Bread(
+  //   "Brown Flour",
+  //   "Chicken Egg",
+  //   "Blue Band Butter",
+  // );
+  // chisomBread.bake();
+
+  // let chisom = {
+  //   age: 90,
+  //   height: 80,
+  //   complexion: "fair",
+  //   eye: "red",
+  //   sayName: function () {
+  //     console.log("My name is Chisom");
+  //   },
+  // };
+
+  // chisom.sayName();
 
   // DOM Manipulation (Document Object Model)
+
 </script>
 
 <body>
