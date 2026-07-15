@@ -20,6 +20,18 @@
   }
 </style>
 
+<body>
+  <main>
+    <div class="nav">This is the first DIV</div>
+
+    <div class="main">This is the second DIV</div>
+
+    <div class="topics">This is the third DIV</div>
+
+    <button id="button">Click Me</button>
+  </main>
+</body>
+
 <script>
   // modulus operator: this returns the remainder of a division operation.
 
@@ -353,15 +365,21 @@
   // chisom.sayName();
 
   // DOM Manipulation (Document Object Model)
+  // class HTMLElement
+  // class HTMLDivElement
 
+  const mainEl = document.getElementsByTagName("main")[0];
+  const divNavEl = document.getElementsByClassName("nav")[0];
+
+  const buttonElement = document.getElementById("button");
+  console.log(buttonElement.textContent);
+  buttonElement.style.backgroundColor = "orange";
+
+  function buttonClick() {
+    console.log("this button is clicked");
+    // divNavEl.style.display = "none"
+    mainEl.removeChild(divNavEl)
+  }
+
+  buttonElement.addEventListener("click", buttonClick);
 </script>
-
-<body>
-  <main>
-    <div class="nav"></div>
-
-    <div class="main"></div>
-
-    <div class="topics"></div>
-  </main>
-</body>
